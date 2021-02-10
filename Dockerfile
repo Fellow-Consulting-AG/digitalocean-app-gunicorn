@@ -1,6 +1,6 @@
 FROM python:3.8
 
-LABEL maintainer="Sebastian Ramirez <tiangolo@gmail.com>"
+LABEL maintainer="Daniel Jordan <daniel.jordan@fellow-consulting.de>"
 
 RUN pip install meinheld gunicorn
 
