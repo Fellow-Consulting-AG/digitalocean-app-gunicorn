@@ -10,7 +10,7 @@ RUN chmod +x /entrypoint.sh
 
 COPY ./start.sh /start.sh
 RUN chmod +x /start.sh
-RUN chmod +x /app/prestart.sh
+
 
 COPY ./gunicorn_conf.py /gunicorn_conf.py
 
@@ -22,6 +22,7 @@ RUN pip install -r /requirements.txt
 
 
 COPY ./app /app
+RUN chmod +x /app/prestart.sh
 WORKDIR /app/
 
 ENV PYTHONPATH=/app
