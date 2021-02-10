@@ -2,7 +2,8 @@ FROM python:3.8
 
 LABEL maintainer="Daniel Jordan <daniel.jordan@fellow-consulting.de>"
 
-RUN pip install meinheld gunicorn
+#RUN pip install meinheld Gunicorn
+RUN pip install  Gunicorn
 
 COPY ./entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
